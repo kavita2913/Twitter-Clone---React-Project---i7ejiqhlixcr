@@ -4,7 +4,7 @@ import { Avatar } from '@mui/material'
 import React, { forwardRef, useState } from 'react'
 import './Post.css'
 
-const Post = forwardRef(({ displayName, username, verified, text, image, avatar, onComment }, ref) => {
+const Post = forwardRef(({ displayName, username, Verified, text, image, avatar, onComment }, ref) => {
   const [liked, setLiked] = useState(false);
   const [showCommentBox, setShowCommentBox] = useState(false);
   const [comment, setComment] = useState("");
@@ -32,14 +32,14 @@ const Post = forwardRef(({ displayName, username, verified, text, image, avatar,
         <div className="post_header">
           <div className="post_headerText">
             <h3>
-              {displayName} {" "}<span className='post_headerSpecial'>{verified && <VerifiedIcon className="post_badge" />}{username}</span>
+              {displayName} {" "}<span className='post_headerSpecial'>{Verified && <VerifiedIcon className="post_badge" />}{username}</span>
             </h3>
           </div>
           <div className="post_headerDescription">
             <p>{text}</p>
           </div>
         </div>
-        <img src={image} alt="" />
+        {image !== "" && <img src={image} alt="" className='img' />}
         <div className="post_footer">
           <div className='likeMain' onClick={handleLikeClick}>
             {liked ? (
@@ -61,7 +61,7 @@ const Post = forwardRef(({ displayName, username, verified, text, image, avatar,
                 value={comment}
                 onChange={(e) => setComment(e.target.value)}
               />
-              <button onClick={handleCommentSubmit}>Submit</button>
+              <button onClick={handleCommentSubmit}>Comment</button>
             </>
           )}
           {comments.map((comment, index) => (
