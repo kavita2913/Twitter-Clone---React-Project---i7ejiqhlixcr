@@ -82,13 +82,13 @@ function SidebarLogout(props) {
           >
             Log In
           </Button>
-          <Button
-            variant="outlined"
-            className="sidebar_tweet login"
-            onClick={handleSignUpClick}
-          >
-            Sign Up
-          </Button>
+//           <Button
+//             variant="outlined"
+//             className="sidebar_tweet login"
+//             onClick={handleSignUpClick}
+//           >
+//             Sign Up
+//           </Button>
         </>
       )}
       {logInform && (
