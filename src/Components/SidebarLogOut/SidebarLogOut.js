@@ -89,8 +89,8 @@ function SidebarLogout(props) {
 //           >
 //             Sign Up
 //           </Button>
-        </>
-      )}
+//         </>
+//       )}
       {logInform && (
         <Button
           variant="outlined"
