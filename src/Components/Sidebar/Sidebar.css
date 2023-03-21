@@ -1,13 +1,13 @@
 .sidebar{
     border-right: 1px solid var(--twitter-background);
-    background-color: var(--twitter-background);
+    /* background-color: var(--twitter-background); */
     flex: 0.3;
     min-width: 250px;
-    margin-left: 80px;
+    margin-left: 20px;
     margin-right: 0;
     position: fixed;
     top: 20px; /* Set the distance from the top of the viewport */
-    left: 20px; /* Set the distance from the left edge of the viewport */
+    left: 80px; /* Set the distance from the left edge of the viewport */
     width: 250px; /* Set the width of the sidebar */
     height: calc(100vh - 60px); /* Set the height of the sidebar */
  

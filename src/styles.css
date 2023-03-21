@@ -1,7 +1,7 @@
 body{
     --twitter-color: #50b7f5;
-    /* --twitter-background: #e6ecf0; */
-    --twitter-background: #fff;
+    --twitter-background: #e6ecf0;
+    /* --twitter-background: #fff; */
 }
 .app{
     height: 100vh;
