@@ -9,7 +9,6 @@ import { Button } from '@mui/material';
 function SidebarLogOut(props) {
   const { setLog } = props;
   const [logInform, setLoginform] = useState(false);
-  const [signUpForm, setSignUpForm] = useState(false);
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -18,13 +17,7 @@ function SidebarLogOut(props) {
   const [signUp, setSignUp] = useState([]);
 
   const handleSignUpClick = () => {
-    setSignUpForm(!logInform);
     setLoginform(false);
-  };
-
-  const handleLoginClick = () => {
-    setLoginform(!signUpForm);
-    setSignUpForm(false);
   };
 
   const handleSubmit = () => {
@@ -57,7 +50,7 @@ function SidebarLogOut(props) {
           <div className="Password">
             <p>Password</p>
             <input
-              type="text"
+              type="password"
               onChange={(e) => setPasswordLog(e.target.value)}
               value={passwordLog}
             />
@@ -71,57 +64,24 @@ function SidebarLogOut(props) {
           </Button>
         </div>
       )}
-      {signUpForm && (
+      {!logInform && (
         <>
-          <div className="Name">
-            <p>Name</p>
-            <input
-              type="text"
-              onChange={(e) => setName(e.target.value)}
-              value={name}
-            />
-          </div>
-          <div className="Email">
-            <p>email</p>
-            <input
-              type="text"
-              onChange={(e) => setEmail(e.target.value)}
-              value={email}
-            />
-          </div>
-          <div className="Password">
-            <p>Password</p>
-            <input
-              type="text"
-              onChange={(e) => setPassword(e.target.value)}
-              value={password}
-            />
-          </div>
           <Button
             variant="outlined"
             className="sidebar_tweet login"
             onClick={handleSubmit}
           >
-            Submit
+            Log In
+          </Button>
+          <Button
+            variant="outlined"
+            className="sidebar_tweet login"
+            onClick={handleSignUpClick}
+          >
+            Sign Up
           </Button>
         </>
       )}
-      <Button
-        variant="outlined"
-        className="sidebar_tweet login"
-        onClick={handleLoginClick}
-        fullWidth
-      >
-        Log In
-      </Button>
-      <Button
-        variant="outlined"
-        className="sidebar_tweet login"
-        onClick={handleSignUpClick}
-        fullWidth
-      >
-        Sign Up
-      </Button>
     </div>
   );
 }
