@@ -6,15 +6,15 @@ import Tag from '@mui/icons-material/Tag';
 import Settings from '@mui/icons-material/Settings';
 import { Button } from '@mui/material';
 
-function SidebarLogOut(props) {
+function SidebarLogout(props) {
   const { setLog } = props;
   const [logInform, setLoginform] = useState(false);
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  // const [name, setName] = useState('');
+  // const [email, setEmail] = useState('');
+  // const [password, setPassword] = useState('');
   const [emailLog, setEmailLog] = useState('');
   const [passwordLog, setPasswordLog] = useState('');
-  const [signUp, setSignUp] = useState([]);
+  // const [signUp, setSignUp] = useState([]);
 
   const handleSignUpClick = () => {
     setLoginform(false);
@@ -25,10 +25,19 @@ function SidebarLogOut(props) {
   };
 
   const handleLogin = () => {
-    if (email === emailLog && password === passwordLog) {
+    if (emailLog === 'KAVITASAINI' && passwordLog === 'KAVITA@123') {
       setLog(true);
     } else {
       alert('Wrong email or password');
+    }
+  };
+
+  const handleAddTweetClick = () => {
+    if (logInform) {
+      // TODO: Implement adding a new tweet
+      console.log('Add tweet clicked');
+    } else {
+      alert('You must be logged in to add a tweet.');
     }
   };
 
@@ -44,7 +53,7 @@ function SidebarLogOut(props) {
             <input
               type="text"
               onChange={(e) => setEmailLog(e.target.value)}
-              value={emailLog}
+              value={emailLog} required
             />
           </div>
           <div className="Password">
@@ -52,7 +61,7 @@ function SidebarLogOut(props) {
             <input
               type="password"
               onChange={(e) => setPasswordLog(e.target.value)}
-              value={passwordLog}
+              value={passwordLog} required
             />
           </div>
           <Button
@@ -82,8 +91,17 @@ function SidebarLogOut(props) {
           </Button>
         </>
       )}
+      {logInform && (
+        <Button
+          variant="outlined"
+          className="sidebar_tweet"
+          onClick={handleAddTweetClick}
+        >
+          Add tweet
+        </Button>
+      )}
     </div>
   );
 }
 
-export default SidebarLogOut;
+export default SidebarLogout;

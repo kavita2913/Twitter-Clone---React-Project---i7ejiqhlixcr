@@ -14,6 +14,7 @@ function TweetBox() {
 
     const image = tweetImage.trim() !== '' ? tweetImage : null;
 
+    
     db.collection('posts').add({
       displayName: 'KavitaSaini',
       username: '@KavitaSaini29',
