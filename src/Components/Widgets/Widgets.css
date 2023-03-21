@@ -1,6 +1,19 @@
-.widgets{
-    flex: 0.3;
+.widgets {
+    
+        position: fixed;
+        top: 0; /* adjust this value to position the element where you want it */
+        right: 20px; /* adjust this value to position the element where you want it */
+        width: 360px;
+        height: fit-content;
+        border-radius: 10px;
+        background-color: white;
+        padding: 20px;
+        box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+        z-index: 1; /* ensure the widget is above other elements on the page */
+      
+      
 }
+
 .widgets_input{
     display: flex;
     align-items: center;
@@ -10,14 +23,17 @@
     margin-top: 10px;
     margin-left: 20px;
 }
+
 .widgets_input input{
     border: none;
     background-color: var(--twitter-background);
     outline: none;
 }
+
 .widgets_searchIcon{
     color: gray;
 }
+
 .widgets_widgetContainer{
     margin-top: 15px;
     margin-left: 20px;
@@ -25,10 +41,12 @@
     background-color: #f5f8fa;
     border-radius: 20px;
 }
+
 .widgets_widgetContainer h2{
     font-size: 18px;
     font-weight: 800;
 }
+
 .widgets_widgetContainer nav ul{
     margin-top: 20px;
     display: flex;
@@ -38,13 +56,14 @@
     margin-left: 0;
     border-bottom: 1px solid rgb(224, 223, 223);
 }
+
 .widgets_widgetContainer nav ul li{
     list-style: none;
     font-weight: 400;
     font-size: 20px;
     padding: 10px;
-
 }
+
 .widgets_widgetContainer nav ul li:hover{
     font-weight: 600;
     cursor: pointer;
