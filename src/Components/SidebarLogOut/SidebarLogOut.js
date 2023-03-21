@@ -33,7 +33,7 @@ function SidebarLogout(props) {
   };
 
   const handleAddTweetClick = () => {
-    if (logInform) {
+    if (!logInform) {
       // TODO: Implement adding a new tweet
       console.log('Add tweet clicked');
     } else {
