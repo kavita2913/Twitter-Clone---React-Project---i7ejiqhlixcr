@@ -25,7 +25,7 @@ function TweetBox() {
       timestamp: firebase.firestore.FieldValue.serverTimestamp(),
       Verified: true,
       text: tweetMessage,
-      image: image,
+      image: tweetImage,
       avatar:
         'https://imgs.search.brave.com/V5ISbSs-f_ZHYnttNH20_AnL9KwG44iHIflqNhDmfLM/rs:fit:474:474:1/g:ce/aHR0cHM6Ly93b25k/ZXItZGF5LmNvbS93/cC1jb250ZW50L3Vw/bG9hZHMvMjAyMy8w/My93b25kZXItZGF5/LWF2YXRhci1zbWls/ZXktNDUucG5n',
     });
