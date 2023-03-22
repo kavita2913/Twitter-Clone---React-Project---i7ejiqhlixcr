@@ -16,6 +16,7 @@ import Button from '@mui/material/Button';
 function Sidebar() {
   return (
     // BEM conenvtion
+    <div className='sidebar_main'>
     <div className="sidebar">
       <TwitterIcon className='sidebar_twitterIcon' />
       <SidebarOption active Icon={HomeIcon} text="Home" />
@@ -27,6 +28,7 @@ function Sidebar() {
       <SidebarOption Icon={PermIdentityIcon} text="Profile" />
       <SidebarOption Icon={MoreHorizIcon} text="More" />
       <Button className='sidebar_tweet' variant='outlined'>Tweet</Button>
+    </div>
     </div>
   )
 }

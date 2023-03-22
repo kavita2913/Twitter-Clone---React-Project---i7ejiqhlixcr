@@ -1,18 +1,18 @@
-.sidebar{
-    border-right: 1px solid var(--twitter-background);
+/* .sidebar{ */
+    /* border-right: 1px solid var(--twitter-background); */
     /* background-color: var(--twitter-background); */
-    flex: 0.3;
-    min-width: 250px;
-    margin-left: 51px;
-    margin-right: 0;
-    position: fixed;
-    top: 20px; /* Set the distance from the top of the viewport */
-    left: 80px; /* Set the distance from the left edge of the viewport */
-    width: 250px; /* Set the width of the sidebar */
-    height: calc(100vh - 60px); /* Set the height of the sidebar */
+    /* flex: 0.3; */
+    /* min-width: 250px; */
+    /* margin-left: 51px; */
+    /* margin-right: 0; */
+    /* position: fixed; */
+    /* top: 20px; Set the distance from the top of the viewport */
+    /* left: 80px; Set the distance from the left edge of the viewport */
+    /* width: 250px; Set the width of the sidebar */
+    /* height: calc(100vh - 60px); Set the height of the sidebar */
  
-}
-.sidebar_twitterIcon{
+/* } */
+/* .sidebar_twitterIcon{
     color: var(--twitter-color);
     font-size: 30px !important;
     margin: 10px 20px;
@@ -28,7 +28,39 @@
     height: 50px !important;
     margin-top: 20px !important;
     width: 90% !important;
+} */
+.sidebar_main {
+  border-right: 1px solid var(--twitter-background);
+  flex: 0.3;
+  min-width: 250px;
+  margin-left: 20px;
+  margin-right: 0px;
 }
-@media screen {
-    
-}
+  
+  .sidebar {
+    border-right: 1px solid var(--twitter-background);
+    flex: 0.3;
+    min-width: 250px;
+    margin-left: 20px;
+    margin-right: 0px;
+  }
+  
+  .sidebar_twitterIcon {
+    color: var(--twitter-color);
+    font-size: 30px !important;
+    margin: 10px 20px;
+    margin-bottom: 20px;
+  }
+  
+  .sidebar_tweet {
+    background-color: var(--twitter-color) !important;
+    border: none !important;
+    color: white !important;
+    font-weight: 900 !important;
+    text-transform: inherit !important;
+    border-radius: 30px !important;
+    height: 50px !important;
+    margin-top: 20px !important;
+    width: 90% !important;
+  }
+  

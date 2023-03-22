@@ -4,8 +4,6 @@ import './styles.css';
 import Home from './HomePage.js';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Login from './Login';
-// import NewRegistration from './Components/NewRegistration';
-// import NewRegistration from './NewRegistration';
 import NewRegistration from './NewRegistration';
 
 
