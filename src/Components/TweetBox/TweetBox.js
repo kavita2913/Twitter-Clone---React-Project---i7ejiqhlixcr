@@ -52,6 +52,14 @@ function TweetBox() {
         <Button onClick={sendTweet} className="tweetBox_tweetButton">
           Tweet
         </Button>
+        {tweetImage && (
+          <div className="tweetBox_imageContainer">
+            <img src={tweetImage} alt="tweet" />
+          </div>
+        )}
+        {tweetMessage && !tweetImage && (
+          <div className="tweetBox_textContainer">{tweetMessage}</div>
+        )}
       </form>
     </div>
   );
