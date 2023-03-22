@@ -42,7 +42,7 @@ return (
 <p>{text}</p>
 </div>
 </div>
-{image !== "" && <img src={image} alt="" className='img' />}
+ <img src={image} alt="" />
 <div className="post_footer">
 <div className='likeMain' onClick={handleLikeClick}>
 {liked ? (
