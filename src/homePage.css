@@ -1,8 +1,9 @@
 .homePage{
     display: flex; 
-    width: 1300px; 
+    /* width: 1300px;  */
     margin: auto;
     justify-content: center;
     align-items: center;
     background:  #fff;
+    position: sticky;
 }

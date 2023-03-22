@@ -1,16 +1,15 @@
 .widgets {
     
-        position: fixed;
-        top: 0; /* adjust this value to position the element where you want it */
-        right: 20px; /* adjust this value to position the element where you want it */
-        width: 360px;
-        height: fit-content;
-        border-radius: 10px;
-        background-color: white;
-        padding: 20px;
-        box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
-        z-index: 1; /* ensure the widget is above other elements on the page */
-      
+    position: absolute;
+    top: 0;
+    right: 20px;
+    width: 360px;
+    height: fit-content;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+    z-index: 1;
+
       
 }
 
