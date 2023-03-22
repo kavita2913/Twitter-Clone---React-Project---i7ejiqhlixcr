@@ -12,7 +12,11 @@ function TweetBox() {
   const sendTweet = (e) => {
     e.preventDefault();
 
-    const image = tweetImage.trim() !== '' ? tweetImage : null;
+      if (tweetMessage.trim() === '' && tweetImage.trim() === '') {
+      alert('Please fill in the tweet message or tweet image URL.');
+      return;
+    }
+
 
     
     db.collection('posts').add({
