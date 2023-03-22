@@ -1,9 +1,9 @@
 .feed {
     flex: 0.4;
     border-right: 1px solid var(--twitter-background);
-    width: 589px;
+    /* width: 300px; */
     position: fixed;
-    width: 589px;
+    width: 600px;
     top:0;
     left: 330px;
     right: 50px;

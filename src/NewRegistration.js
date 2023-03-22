@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-// import "../styles/registrationPage.css";
+import TwitterIcon from '@mui/icons-material/Twitter';
+
+import "./NewRegister.css";
 
 const NewRegistration= () => {
   const [username, setUsername] = useState("");
@@ -43,13 +45,15 @@ const NewRegistration= () => {
     // store the updated array of users in local storage
     localStorage.setItem("users", JSON.stringify(updatedUsers));
     
-    navigate("/");
+    navigate("/home");
   };
 
   return (
+    <div className='register'>
     <div className="registration-container">
       <h1>New Registration</h1>
       <form className="registration-form" onSubmit={handleSubmit}>
+       <TwitterIcon className='sidebar_twitterIcon' />
         <label>
           Username <input type="text" value={username} onChange={handleUsernameChange} />
         </label>
@@ -62,12 +66,13 @@ const NewRegistration= () => {
           Email <input type="email" value={email} onChange={handleEmailChange} />
         </label>
         <br />
-        <button className='register-button' type="submit">Register</button>
+        <button className='register-button' type="submit">Sign in</button>
         <br />
         <p className='existing-account'>
           <Link to={"/"}>Already Have An Account? Please Login</Link>
         </p>
       </form>
+    </div>
     </div>
   );
 };
