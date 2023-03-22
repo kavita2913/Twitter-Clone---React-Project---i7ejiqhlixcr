@@ -34,4 +34,5 @@
     margin-top: 20px !important;
     width: 80px !important;
     margin-left: auto !important;
+    filter: opacity(0.8);
 }
