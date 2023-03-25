@@ -14,7 +14,6 @@ function TweetBox() {
 
     const image = tweetImage.trim() !== '' ? tweetImage : null;
 
-    
     db.collection('posts').add({
       displayName: 'KavitaSaini',
       username: '@KavitaSaini29',
@@ -28,6 +27,15 @@ function TweetBox() {
 
     setTweetMessage('');
     setTweetImage('');
+  };
+
+  const handleTweetClick = (e) => {
+    e.preventDefault();
+    if (tweetMessage.trim() === '' && tweetImage.trim() === '') {
+      window.alert('Please fill the input boxes!');
+    } else {
+      sendTweet(e);
+    }
   };
 
   return (
@@ -49,7 +57,7 @@ function TweetBox() {
           placeholder="Enter image URL (optional)"
           type="text"
         />
-        <Button onClick={sendTweet} className="tweetBox_tweetButton">
+        <Button onClick={handleTweetClick} className="tweetBox_tweetButton">
           Tweet
         </Button>
       </form>
