@@ -20,12 +20,16 @@
     font-size: 20px;
     border: none;
     outline: none;
+    background: white;
+
   }
   
   .tweetBox_imageInput {
     border: none;
     padding: 10px;
     outline: none;
+    background: white;
+
   }
   
   .tweetBox_tweetButton {
