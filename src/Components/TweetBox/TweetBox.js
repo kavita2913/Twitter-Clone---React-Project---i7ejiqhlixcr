@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-import {Avatar} from '@mui/material';
+import React, { useState } from 'react';
+import { Avatar } from '@mui/material';
 import Button from '@mui/material/Button';
 import './TweetBox.css';
 import db from '../firebase.js';
