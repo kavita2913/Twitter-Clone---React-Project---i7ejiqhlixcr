@@ -11,12 +11,12 @@ function HomePage() {
 
         <div className='homePage'>
             <div >
-                <Sidebar />
+                <Sidebar className='sidebar' />
             </div>
             <div>
-                <Feed />
+                <Feed className='feed' />
             </div>
-            <div> <Widgets />
+            <div> <Widgets className ='widgets' />
             </div>
 
         </div >

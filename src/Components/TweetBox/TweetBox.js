@@ -13,10 +13,12 @@ function TweetBox() {
     e.preventDefault();
 
     const image = tweetImage.trim() !== '' ? tweetImage : null;
+    const users = JSON.parse(localStorage.getItem("users")) || [];
+    console.log(users);
 
     db.collection('posts').add({
-      displayName: 'KavitaSaini',
-      username: '@KavitaSaini29',
+      displayName: users.username,
+      username: users.username,
       timestamp: firebase.firestore.FieldValue.serverTimestamp(),
       Verified: true,
       text: tweetMessage,

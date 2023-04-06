@@ -20,7 +20,7 @@ function Login() {
     event.preventDefault();
     const users = JSON.parse(localStorage.getItem("users")) || [];
     console.log(users)
-    const userMatch = users.find((u) => u.username === username && u.password === password);
+    const userMatch = users.username === username && users.password === password;
     if (userMatch) {
       navigate("/home");
     } else {

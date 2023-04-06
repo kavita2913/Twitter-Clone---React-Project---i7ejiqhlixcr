@@ -1,5 +1,31 @@
 .homePage{
-    display: flex; 
-    justify-content: center;
-    /* overflow-y: hidden; */
+    display: flex; /* Use flexbox to arrange the components */
+    flex-wrap: wrap; /* Allow components to wrap to a new line on smaller screens */
+    justify-content: center; /* Center the components horizontally */
+    align-items: flex-start; /* Align the components to the top of the container */
+    width: 100%;
+    overflow: hidden;
+}
+
+.sidebar {
+    flex: 0.3;
+    min-width: 250px;
+}
+
+.feed {
+    flex: 0.4;
+    min-width: 300px;
+}
+
+.widgets {
+    flex: 0.3;
+    min-width: 250px;
+    margin-left: auto; /* Push widgets container to the right */
+}
+
+.widgets_widgetContainer {
+    margin-top: 15px;
+    padding: 20px;
+    background-color: #f5f8fa;
+    border-radius: 20px;
 }

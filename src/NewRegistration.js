@@ -37,13 +37,13 @@ const NewRegistration= () => {
     };
 
     // retrieve existing users from local storage or create an empty array if none exist
-    const existingUsers = JSON.parse(localStorage.getItem("users")) || [];
+    // const existingUsers = JSON.parse(localStorage.getItem("users")) || [];
 
     // add the new user to the array of users
-    const updatedUsers = [...existingUsers, newUser];
+    // const updatedUsers = [...existingUsers, newUser];
 
     // store the updated array of users in local storage
-    localStorage.setItem("users", JSON.stringify(updatedUsers));
+    localStorage.setItem("users", JSON.stringify(newUser));
     
     navigate("/home");
   };
