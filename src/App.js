@@ -1,15 +1,14 @@
 import React from 'react';
 // import { useState } from 'react';
 import './styles.css';
-import Home from './HomePage.js';
+import Home from './HomePage/HomePage.js';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Login from './Login';
-import NewRegistration from './NewRegistration';
+import Login from './Login/Login';
+import NewRegistration from './NewRegister/NewRegistration';
 
 
 function App() {
-  // const [log,setLog] = useState(false)
-  // console.log(log);
+  
   return (
     <BrowserRouter>
       <Routes>
