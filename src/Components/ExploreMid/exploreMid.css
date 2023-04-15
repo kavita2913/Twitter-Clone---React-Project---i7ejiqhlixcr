@@ -1,0 +1,14 @@
+.exploreMid{
+    flex: 0.8;
+    /* border-right: 1px solid var(--twitter-background); */
+    /* min-width: fit-content; */
+    /* overflow-y: scroll; */
+    /* width: 200px; */
+}
+.widgets_widgetContainer{
+    margin-top: 15x;
+    margin-left: 0;
+    padding: 0px;
+    background-color: #f5f8fa;
+    border-radius: 20px;
+}

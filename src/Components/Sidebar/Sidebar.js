@@ -30,15 +30,19 @@ function Sidebar() {
   return (
     <div className="sidebar">
       <TwitterIcon className='sidebar_twitterIcon' />
-      <SidebarOption active Icon={HomeIcon} text="Home" />
-      <SidebarOption Icon={SearchIcon} text="Explore" />
+      <Link to="/home" className='anchor_tag'>
+        <SidebarOption active Icon={HomeIcon} text="Home" />
+      </Link>
+      <Link to="/explore" className='anchor_tag'>
+        <SidebarOption Icon={SearchIcon} active text="Explore" />
+      </Link>
       <SidebarOption Icon={NotificationsNoneIcon} text="Notification" />
       <SidebarOption Icon={MailOutlineIcon} text="Message" />
       <SidebarOption Icon={BookmarkBorderIcon} text="Bookmarks" />
       <SidebarOption Icon={ListAltIcon} text="Lists" />
       <SidebarOption Icon={PermIdentityIcon} text="Profile" />
       <SidebarOption Icon={MoreHorizIcon} text="More" />
-      <Button className='sidebar_tweet' variant='outlined'>Tweet</Button>
+      {/* <Button className='sidebar_tweet' variant='outlined'>Tweet</Button> */}
       <Button className='sidebar_logout' onClick={() => setShowLogoutDialog(true)}>Logout</Button>
 
       {showLogoutDialog && (
