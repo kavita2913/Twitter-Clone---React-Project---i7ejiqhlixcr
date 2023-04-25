@@ -1,5 +1,5 @@
 import React from 'react'
-import "./exploreEnd.css"
+// import "./exploreEnd.css"
 // import Search from "@mui/icons-material/Search";
 
 const ExploreEnd = () => {

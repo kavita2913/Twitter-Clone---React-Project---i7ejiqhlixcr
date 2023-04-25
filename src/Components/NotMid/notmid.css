@@ -1,0 +1,71 @@
+.notmid {
+    border-right: 0.5px solid var(--twitter-background);
+    width: 600px;
+    flex: 0.6;
+    min-width: 300px;
+    margin-right: 50px;
+}
+
+.notmid h1 {
+    background-color: white;
+}
+
+.notIcon {
+   text-align: end;
+}
+
+.all p {
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    word-spacing: 4px;
+}
+
+.verify img {
+    margin-left: 100px;
+    margin-top: 40px;
+}
+
+.verify h1 {
+    margin-left: 100px;
+    margin-top: 20px;
+    font-size: 35px;
+}
+
+.verify p {
+    margin-left: 100px;
+}
+
+.mention h1 {
+    margin-left: 100px;
+    font-size: 35px;
+}
+
+.mention p {
+    margin-left: 100px;
+}
+
+ul li.active {
+    border-bottom: 1px solid black;
+}
+.notmid_notmidContainer > nav > ul{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;             
+    background-color: white;
+    margin-left: 0;
+    border-bottom: 1px solid rgb(224, 223, 223);
+  }
+  .notmid_notmidContainer > nav > ul > li{
+    list-style: none;
+    font-weight: 400;
+    font-size: 18px;
+    padding: 20px;
+  
+  }
+  .notmid_notmidContainer > nav > ul > li:hover{
+    font-weight: 600;
+    cursor: pointer;
+    background-color: var(--twitter-background);
+  }

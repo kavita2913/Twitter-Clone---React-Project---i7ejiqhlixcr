@@ -1,0 +1,32 @@
+.messageEnd{
+    flex: 0.3;
+    width: 250px;
+    /* margin-left: 30px; */
+    margin-right: 70px ;
+    /* min-width: 250px; */
+    
+}
+.message_data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+ .messageEnd h3{
+    font-size: 31px;
+    font-weight: 800;
+    font-family: inherit;
+    margin-right: 40px;
+}
+.messageEnd_btn{
+    background-color: var(--twitter-color) !important;
+    border: none !important;
+    color: white !important;
+    font-weight: 900 !important;
+    text-transform: inherit !important;
+    border-radius: 30px !important;
+    height: 50px !important;
+    margin-top: 20px !important;
+    width: 50% !important;
+}

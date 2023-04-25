@@ -1,0 +1,12 @@
+.listMid{
+    /* flex: 0.8; */
+    border-right: 1px solid var(--twitter-background);
+    width: 600px;
+    margin-left: 360px;
+}
+.listMid h3{
+    font-weight: 700;
+    /* right: 20px; */
+}
+
+

@@ -1,26 +1,20 @@
-import React from 'react'
-import Sidebar from '../Components/Sidebar/Sidebar'
-import Feed from '../Components/Feed/Feed'
-import Widgets from '../Components/Widgets/Widgets'
-// import './styles.css'
-// import '../src/Components/homePage.css'
-import './homePage.css'
+import React from 'react';
+import Sidebar from '../Components/Sidebar/Sidebar';
+import Feed from '../Components/Feed/Feed';
+import Widgets from '../Components/Widgets/Widgets';
+import './homePage.css';
 
 function HomePage() {
-    return (
+  return (
+    <div className='homePage'>
 
-        <div className='homePage'>
-            <div >
-                <Sidebar className='sidebar' />
-            </div>
-            <div>
-                <Feed className='feed' />
-            </div>
-            <div> <Widgets className ='widgets' />
-            </div>
+      <Sidebar className='sidebar' />
+      <Feed className='feed' />
+      <Widgets className='widgets' />
 
-        </div >
-    )
+
+    </div>
+  );
 }
 
-export default HomePage
+export default HomePage;

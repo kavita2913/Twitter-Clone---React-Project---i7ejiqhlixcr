@@ -1,6 +1,9 @@
 .widgets {
     flex: 0.3;
-    
+    width: 250px;
+    /* margin-left: 30px; */
+    margin-right: 70px ;
+    /* min-width: 250px; */
   }
   
   .widgets_input {
@@ -8,9 +11,9 @@
     align-items: center;
     background-color: var(--twitter-background);
     padding: 10px;
-    border-radius: 20px;
+    border-radius: 30px;
     margin-top: 10px;
-    margin-left: 20px;
+    /* margin-left: 20px; */
   }
   
   .widgets_input input {
@@ -25,34 +28,14 @@
   
   .widgets_widgetContainer {
     margin-top: 15px;
-    margin-left: 20px;
-    padding: 20px;
+    /* margin-left: 20px; */
+    /* padding: 20px; */
     background-color: #f5f8fa;
     border-radius: 20px;
   }
   
   .widgets_widgetContainer h2 {
-    font-size: 18px;
-    font-weight: 800;
-  }
-  .widgets_widgetContainer > nav > ul{
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;             
-    background-color: white;
-    margin-left: 0;
-    border-bottom: 1px solid rgb(224, 223, 223);
-}
-.widgets_widgetContainer > nav > ul > li{
-    list-style: none;
-    font-weight: 400;
     font-size: 20px;
-    padding: 10px;
-
-}
-.widgets_widgetContainer > nav > ul > li:hover{
-    font-weight: 600;
-    cursor: pointer;
-    background-color: var(--twitter-background);
-}
+    font-weight: 700;
+  }
+ 

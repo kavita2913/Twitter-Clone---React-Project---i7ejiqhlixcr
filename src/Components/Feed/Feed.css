@@ -1,9 +1,10 @@
 .feed {
-    flex: 0.4;
-    border-right: 1px solid var(--twitter-background);
-    min-width: fit-content;
+    border-right: 0.5px solid var(--twitter-background);
     overflow-y: scroll;
     width: 600px;
+    flex: 0.6;
+    min-width: 300px;
+    margin-right: 50px;
 }
 .feed::-webkit-scrollbar {
     display: none;
@@ -20,7 +21,7 @@
     background-color: white;
     z-index: 100;
     border: 1px solid var(--twitter-background);
-    padding: 15px 20px;
+    padding: 20px 25px;
 }
 .feed_header h2{
     font-size: 20px;

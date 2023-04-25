@@ -1,14 +1,56 @@
-.exploreMid{
-    flex: 0.8;
-    /* border-right: 1px solid var(--twitter-background); */
-    /* min-width: fit-content; */
-    /* overflow-y: scroll; */
-    /* width: 200px; */
+.exploreMid {
+  border-right: 0.5px solid var(--twitter-background);
+  width: 600px;
+  flex: 0.6;
+  min-width: 300px;
+  margin-right: 50px;
 }
-.widgets_widgetContainer{
-    margin-top: 15x;
-    margin-left: 0;
-    padding: 0px;
-    background-color: #f5f8fa;
-    border-radius: 20px;
+
+.explore_input {
+  display: flex;
+  align-items: center;
+  width: 450px;
+  background-color: var(--twitter-background);
+  padding: 12px;
+  margin-left: 30px;
+  border-radius: 30px;
+  margin-top: 8px;
+}
+
+.explore_input input {
+  border: none;
+  background-color: var(--twitter-background);
+  outline: none;
+}
+
+.explore_input_container {
+  display: flex;
+  align-items: center;
+}
+.explore_searchIcon {
+  color: gray;
+}
+.settingIcon {
+  margin-left: 70px;
+}
+.explore_exploreContainer > nav > ul{
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;             
+  background-color: white;
+  margin-left: 0;
+  border-bottom: 1px solid rgb(224, 223, 223);
+}
+.explore_exploreContainer > nav > ul > li{
+  list-style: none;
+  font-weight: 400;
+  font-size: 18px;
+  padding: 20px;
+
+}
+.explore_exploreContainer > nav > ul > li:hover{
+  font-weight: 600;
+  cursor: pointer;
+  background-color: var(--twitter-background);
 }

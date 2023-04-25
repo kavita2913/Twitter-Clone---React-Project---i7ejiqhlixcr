@@ -1,0 +1,9 @@
+.notification {
+  display: flex; /* Use flexbox to arrange the components */
+  flex-wrap: wrap; /* Allow components to wrap to a new line on smaller screens */
+  justify-content: center; /* Center the components horizontally */
+  align-items: flex-start; /* Align the components to the top of the container */
+  width: 100%;
+  overflow: hidden;
+  }
+ 

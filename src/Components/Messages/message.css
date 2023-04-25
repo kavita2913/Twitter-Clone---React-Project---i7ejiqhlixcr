@@ -1,4 +1,4 @@
-.homePage{
+.message{
     display: flex; /* Use flexbox to arrange the components */
     flex-wrap: wrap; /* Allow components to wrap to a new line on smaller screens */
     justify-content: center; /* Center the components horizontally */
@@ -6,24 +6,3 @@
     width: 100%;
     overflow: hidden;
 }
-
-/* .sidebar {
-    flex: 0.3;
-    min-width: 250px;
-}
-
-.feed {
-    flex: 0.4;
-    min-width: 300px;
-}
-
-.widgets {
-    min-width: 250px;
-} */
-
-/* .widgets_widgetContainer {
-    margin-top: 15px;
-    padding: 20px;
-    background-color: #f5f8fa;
-    border-radius: 20px;
-} */

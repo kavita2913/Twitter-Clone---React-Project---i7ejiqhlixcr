@@ -1,29 +1,34 @@
 import React from 'react'
-import "../Widgets/Widgets.css"
 import "./exploreMid.css"
 import Search from "@mui/icons-material/Search";
+import SettingsIcon from '@mui/icons-material/Settings';
 
 const ExploreMid = () => {
   return (
     <div className='exploreMid'>
-    {/* <h2>widjet</h2> */}
-    <div className="widgets_input">
-      <Search className="widgets_searchIcon"/>
-      <input type="text" placeholder='Search twitter' />
-    </div>
-    <div className="widgets_widgetContainer">
-      <nav>
+      <div className="explore_input_container">
+        <div className="explore_input">
+          <Search className="explore_searchIcon" />
+          <input type="text" placeholder='Search twitter' />
+        </div>
+        <div className="settingIcon">
+          <SettingsIcon />
+        </div>
+      </div>
+      <div className="explore_exploreContainer">
+        <nav>
           <ul>
-              <li>For You</li>
-              <li>Trending</li>
-              <li>News</li>
-              <li>Sports</li>
-              <li>Entertainment</li>
+            <li>For You</li>
+            <li>Trending</li>
+            <li>News</li>
+            <li>Sports</li>
+            <li>Entertainment</li>
           </ul>
-      </nav>
+        </nav>
+
+      </div>
     </div>
-    </div>
-)
+  )
 }
 
 export default ExploreMid
