@@ -17,22 +17,15 @@
     font-size: 30px;
     font-weight: 700;
 }
-
-/* .stng_icon {
-    margin-right: 20px;
-} */
-
 .mail_icon {
     margin: 0 10px;
 }
-
 .heading {
     margin-top: 40px;
     font-size: 30px;
     font-weight: 700;
     margin-right: 80px;
 }
-
 .message_btn {
     background-color: var(--twitter-color) !important;
     border: none !important;
