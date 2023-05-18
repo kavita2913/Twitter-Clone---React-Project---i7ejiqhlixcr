@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import TwitterIcon from '@mui/icons-material/Twitter';
-
 import "./NewRegister.css";
 
 const NewRegistration= () => {

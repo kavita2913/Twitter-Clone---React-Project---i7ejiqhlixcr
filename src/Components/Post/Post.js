@@ -77,3 +77,4 @@ const Post = forwardRef(({ displayName, username, Verified, text, image, avatar,
 });
 
 export default Post;
+

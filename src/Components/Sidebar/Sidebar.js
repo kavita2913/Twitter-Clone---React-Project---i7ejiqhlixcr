@@ -47,8 +47,13 @@ function Sidebar() {
       <Link to="/list" className='anchor_tag' >
         <SidebarOption Icon={ListAltIcon} text="Lists" />
       </Link>
-      <SidebarOption Icon={PermIdentityIcon} text="Profile" />
-      <SidebarOption Icon={MoreHorizIcon} text="More" />
+      <Link to="/profile" className='anchor_tag' >
+        <SidebarOption Icon={PermIdentityIcon} text="Profile" />
+      </Link>
+      <Link to="/profile" className='anchor_tag' >
+        <SidebarOption Icon={MoreHorizIcon} text="More" />
+      </Link>
+
       {/* <Button className='sidebar_tweet' variant='outlined'>Tweet</Button> */}
       <Button className='sidebar_logout' onClick={() => setShowLogoutDialog(true)}>Logout</Button>
 

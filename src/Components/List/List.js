@@ -1,7 +1,7 @@
 import React from 'react'
-import Sidebar from '../Components/Sidebar/Sidebar'
-import ListMid from '../Components/ListMid/ListMid'
-import ListEnd from '../Components/ListEnd/ListEnd'
+import Sidebar from '../Sidebar/Sidebar'
+import ListMid from '../ListMid/ListMid'
+import ListEnd from '../ListEnd/ListEnd'
 import './list.css'
 
 const List = () => {

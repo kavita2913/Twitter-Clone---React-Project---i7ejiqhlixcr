@@ -8,7 +8,8 @@ import Explore from '../src/Components/Explore/Explore';
 import Notification from './Components/Notification/Notification';
 import Message from './Components/Messages/Message';
 import Bookmark from './Components/Bookmarks/Bookmark';
-import List from './List/List';
+import List from './Components/List/List';
+import Profile from './Components/Profile/Profile';
 
 function App() {
 
@@ -24,7 +25,7 @@ function App() {
         <Route path='/message' element={<Message />} />
         <Route path='/bookmark' element={<Bookmark />} />
         <Route path='/list' element={<List />} />
-        {/* <Route path='/list' element={<List/>}/> */}
+        <Route path='/profile' element={<Profile />} />
       </Routes>
     </BrowserRouter>
   );

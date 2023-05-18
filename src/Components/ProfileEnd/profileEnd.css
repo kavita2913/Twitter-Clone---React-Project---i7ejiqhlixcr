@@ -1,0 +1,35 @@
+.profileEnd {
+    flex: 0.3;
+    width: 250px;
+    margin-right: 70px;
+}
+
+.profileEnd_input {
+    display: flex;
+    align-items: center;
+    background-color: var(--twitter-background);
+    padding: 10px;
+    border-radius: 30px;
+    margin-top: 10px;
+}
+
+.profileEnd input {
+    border: none;
+    background-color: var(--twitter-background);
+    outline: none;
+}
+
+.widgets_searchIcon {
+    color: gray;
+}
+
+.profileEnd_profileEndContainer {
+    margin-top: 15px;
+    background-color: #f5f8fa;
+    border-radius: 20px;
+}
+
+.profileEnd_profileEndContainer h2 {
+    font-size: 20px;
+    font-weight: 700;
+}

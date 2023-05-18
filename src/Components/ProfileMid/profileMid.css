@@ -1,0 +1,79 @@
+.profile_mid {
+    border-right: 0.5px solid var(--twitter-background);
+    width: 600px;
+    flex: 0.6;
+    min-width: 300px;
+    margin-right: 50px;
+}
+
+.profile_header {
+    position: sticky;
+    top: 0;
+    height: 200px;
+    background-color: white;
+    z-index: 100;
+    border: 1px solid var(--twitter-background);
+    padding: 20px 25px;
+}
+
+.profileMid_avatar .profile_avatar {
+    width: 120px;
+    height: 120px;
+    margin-top: 120px;
+
+}
+
+.button_div {
+    display: flex;
+    justify-content: end;
+    align-self: flex-end;
+    margin: 10px 10px 0 0;
+}
+
+.button_div button {
+    border-radius: 50px;
+}
+
+.profileMid_profileMid_Container>nav>ul {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    margin-left: 0;
+    border-bottom: 1px solid rgb(224, 223, 223);
+}
+
+.profileMid_profileMid_Container>nav>ul>li {
+    list-style: none;
+    font-weight: 400;
+    font-size: 18px;
+    padding: 20px;
+
+}
+
+.profileMid_profileMid_Container>nav>ul>li:hover {
+    font-weight: 600;
+    cursor: pointer;
+    background-color: var(--twitter-background);
+}
+
+.button_div button {
+    background-color: var(--twitter-color);
+    color: white;
+    border: none;
+}
+
+.userName {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+.userName h1{
+    font-size: 20px;
+}
+.followers h4{
+    font-size: 20px;
+    margin: 30px;
+
+}
